@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/library_mgmt
+    username: root
+    password: dudkrish1A
+  jpa:
+    hibernate:
+      ddl-auto=none:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+
+product:
+  api:
+    baseUrl: https://dummyjson.com/products
+
+user:
+  api:
+    baseUrl: https://dummyjson.com/users
